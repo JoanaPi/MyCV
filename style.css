@@ -66,17 +66,47 @@ h1 {
   max-width: 500px;
 }
 
-main {
-  max-width: 1140px;
+ h3 {
+font-weight: bold;
+text-transform: uppercase; 
+
+
+
 }
 
+main {
+  max-width: 1140px;
+  border-bottom:2px solid coral;
+}
+
+
+
+
 .course {
+ display: flex;
+  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;           /* zgodnosc z IE*/
 }
 
 .course .title {
+
+font-weight: bold;
+text-transform: uppercase;
+color: coral;
+flex: 0 0 33.3%;
+max-width: 33%
+-ms-flex: 0 0 33.3%;
+  
 }
 
 .course .descrition {
+-ms-flex: 0 0 66.6%;
+flex: 0 0 66.6%;
+max-width: 66.6%
+}
+
+.course .descrition p {
+  padding-left: 1em;
 }
 
 .school span {
